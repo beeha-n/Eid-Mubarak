@@ -40,7 +40,7 @@ Wishing you delicious feasts, beautiful moments, and memories to cherish forever
 
 May Allah accept your prayers and grant you everything your heart desires.
 
-With love and warm wishes on this blessed day! 🌙✨ 
+With love and warm wishes on this blessed day! 🌙✨
 
 ~beeha ♡`;
 
