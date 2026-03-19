@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Mubarak 🌸</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Confetti Container -->
+    <div id="confetti-container"></div>
+
+    <!-- SECTION 1: WELCOME & NAME INPUT -->
+    <section id="welcome-section" class="section active">
+        <div class="background-container">
+            <div class="bg-gradient"></div>
+            <div class="floating-objects">
+                <!-- Stars -->
+                <div class="star" style="top:8%;left:12%;font-size:30px;">✦</div>
+                <div class="star" style="top:15%;right:18%;font-size:22px;animation-delay:0.5s;">✧</div>
+                <div class="star" style="top:55%;left:8%;font-size:26px;animation-delay:1s;">✦</div>
+                <div class="star" style="top:70%;right:12%;font-size:24px;animation-delay:1.5s;">✧</div>
+                <div class="star" style="top:35%;left:4%;font-size:20px;animation-delay:0.7s;">✦</div>
+                <div class="star" style="top:88%;left:45%;font-size:28px;animation-delay:1.2s;">✧</div>
+
+                <!-- Cherry Blossom Petals -->
+                <div class="cherry-leaf" style="left:8%;animation-delay:0s;">🌸</div>
+                <div class="cherry-leaf" style="left:22%;animation-delay:2.5s;">🌸</div>
+                <div class="cherry-leaf" style="left:38%;animation-delay:5s;">🌸</div>
+                <div class="cherry-leaf" style="left:52%;animation-delay:1.5s;">🌸</div>
+                <div class="cherry-leaf" style="left:68%;animation-delay:3.5s;">🌸</div>
+                <div class="cherry-leaf" style="left:82%;animation-delay:6s;">🌸</div>
+                <div class="cherry-leaf" style="left:92%;animation-delay:4s;">🌸</div>
+
+                <!-- Jellyfish -->
+                <div class="jellyfish pink-jelly" style="top:12%;left:6%;">
+                    <div class="jelly-body"></div>
+                    <div class="jelly-tentacles">
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                    </div>
+                </div>
+                <div class="jellyfish blue-jelly" style="top:25%;right:6%;animation-delay:2s;">
+                    <div class="jelly-body"></div>
+                    <div class="jelly-tentacles">
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                    </div>
+                </div>
+                <div class="jellyfish pink-jelly" style="top:60%;left:10%;animation-delay:4s;transform:scale(0.7);">
+                    <div class="jelly-body"></div>
+                    <div class="jelly-tentacles">
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                    </div>
+                </div>
+
+                <!-- Tulips -->
+                <div class="tulip" style="bottom:8%;left:6%;">
+                    <div class="tulip-petals pink"></div>
+                    <div class="tulip-stem"></div>
+                </div>
+                <div class="tulip" style="bottom:12%;left:14%;animation-delay:0.5s;">
+                    <div class="tulip-petals lilac"></div>
+                    <div class="tulip-stem"></div>
+                </div>
+                <div class="tulip" style="bottom:10%;right:8%;">
+                    <div class="tulip-petals pink"></div>
+                    <div class="tulip-stem"></div>
+                </div>
+                <div class="tulip" style="bottom:14%;right:16%;animation-delay:0.8s;">
+                    <div class="tulip-petals lilac"></div>
+                    <div class="tulip-stem"></div>
+                </div>
+
+                <!-- Forget-me-not -->
+                <div class="forget-me-not" style="bottom:18%;left:22%;">
+                    <div class="fmn-petals"></div>
+                    <div class="fmn-center"></div>
+                    <div class="fmn-stem"></div>
+                </div>
+                <div class="forget-me-not" style="bottom:20%;right:25%;animation-delay:1s;">
+                    <div class="fmn-petals"></div>
+                    <div class="fmn-center"></div>
+                    <div class="fmn-stem"></div>
+                </div>
+
+                <!-- Lily of the Valley -->
+                <div class="lily-valley" style="bottom:6%;left:28%;">
+                    <div class="lily-stem-main"></div>
+                    <div class="lily-bells">
+                        <div class="bell"></div>
+                        <div class="bell"></div>
+                        <div class="bell"></div>
+                    </div>
+                </div>
+                <div class="lily-valley" style="bottom:8%;right:30%;animation-delay:0.6s;">
+                    <div class="lily-stem-main"></div>
+                    <div class="lily-bells">
+                        <div class="bell"></div>
+                        <div class="bell"></div>
+                        <div class="bell"></div>
+                    </div>
+                </div>
+
+                <!-- Cherry Blossom Trees -->
+                <div class="cherry-tree" style="bottom:0;left:-35px;">
+                    <div class="tree-trunk"></div>
+                    <div class="tree-crown">
+                        <div class="crown-part"></div>
+                        <div class="crown-part"></div>
+                        <div class="crown-part"></div>
+                    </div>
+                </div>
+                <div class="cherry-tree" style="bottom:0;right:-40px;transform:scale(0.85);">
+                    <div class="tree-trunk"></div>
+                    <div class="tree-crown">
+                        <div class="crown-part"></div>
+                        <div class="crown-part"></div>
+                        <div class="crown-part"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blur-overlay"></div>
+
+        <!-- Welcome Card -->
+        <div class="welcome-container">
+            <div class="welcome-card">
+                <div class="welcome-decoration">
+                    <span>🌸</span>
+                    <span>✦</span>
+                    <span>🌸</span>
+                </div>
+
+                <h1 class="welcome-title">Welcome!</h1>
+                <p class="welcome-subtitle">You have received a special Eid greeting 💌</p>
+
+                <div class="mini-envelope-container">
+                    <div class="mini-envelope">
+                        <div class="mini-env-back"></div>
+                        <div class="mini-env-front"></div>
+                        <div class="mini-env-flap"></div>
+                    </div>
+                    <span class="mini-heart">💖</span>
+                </div>
+
+                <p class="input-label">Please enter your name to continue:</p>
+
+                <div class="input-wrapper">
+                    <input type="text" id="userName" placeholder="Your lovely name..." maxlength="20"
+                        autocomplete="off">
+                    <span class="input-decoration">🌸</span>
+                </div>
+
+                <button id="continueBtn" class="magic-button">
+                    <span>Continue</span>
+                    <span class="btn-arrow">→</span>
+                </button>
+
+                <div class="welcome-decoration bottom-dec">
+                    <span>✧</span>
+                    <span>🌸</span>
+                    <span>✧</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: ENVELOPE -->
+    <section id="envelope-section" class="section">
+        <div class="background-container">
+            <div class="bg-gradient"></div>
+            <div class="floating-objects">
+                <div class="star" style="top:10%;left:15%;font-size:28px;">✦</div>
+                <div class="star" style="top:18%;right:18%;font-size:22px;animation-delay:0.5s;">✧</div>
+                <div class="star" style="top:58%;left:8%;font-size:26px;animation-delay:1s;">✦</div>
+                <div class="star" style="top:72%;right:14%;font-size:24px;animation-delay:1.5s;">✧</div>
+                <div class="star" style="top:85%;left:50%;font-size:20px;animation-delay:0.8s;">✦</div>
+
+                <div class="cherry-leaf" style="left:12%;animation-delay:0s;">🌸</div>
+                <div class="cherry-leaf" style="left:35%;animation-delay:2s;">🌸</div>
+                <div class="cherry-leaf" style="left:55%;animation-delay:4s;">🌸</div>
+                <div class="cherry-leaf" style="left:78%;animation-delay:1s;">🌸</div>
+                <div class="cherry-leaf" style="left:92%;animation-delay:3s;">🌸</div>
+
+                <div class="jellyfish pink-jelly" style="top:15%;left:5%;">
+                    <div class="jelly-body"></div>
+                    <div class="jelly-tentacles">
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                    </div>
+                </div>
+                <div class="jellyfish blue-jelly" style="top:22%;right:6%;animation-delay:2s;">
+                    <div class="jelly-body"></div>
+                    <div class="jelly-tentacles">
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                    </div>
+                </div>
+
+                <div class="tulip" style="bottom:10%;left:8%;">
+                    <div class="tulip-petals pink"></div>
+                    <div class="tulip-stem"></div>
+                </div>
+                <div class="tulip" style="bottom:12%;right:10%;">
+                    <div class="tulip-petals lilac"></div>
+                    <div class="tulip-stem"></div>
+                </div>
+
+                <div class="forget-me-not" style="bottom:15%;left:20%;">
+                    <div class="fmn-petals"></div>
+                    <div class="fmn-center"></div>
+                    <div class="fmn-stem"></div>
+                </div>
+
+                <div class="lily-valley" style="bottom:8%;right:22%;">
+                    <div class="lily-stem-main"></div>
+                    <div class="lily-bells">
+                        <div class="bell"></div>
+                        <div class="bell"></div>
+                        <div class="bell"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blur-overlay"></div>
+
+        <div class="envelope-container">
+            <p class="envelope-greeting">Hello, <span id="greetingName">Friend</span>! ✨</p>
+            <p class="envelope-message">A special message is waiting for you...</p>
+
+            <div class="envelope" id="envelope">
+                <div class="envelope-shadow"></div>
+                <div class="envelope-back"></div>
+                <div class="letter" id="letter">
+                    <div class="letter-content">
+                        <p class="letter-preview">🌙 Eid Mubarak 🌙</p>
+                    </div>
+                </div>
+                <div class="envelope-front"></div>
+                <div class="envelope-flap"></div>
+            </div>
+
+            <button id="openEnvelopeBtn" class="open-button">
+                <span class="open-icon">💌</span>
+                <span>Open Envelope</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECTION 3: EID MUBARAK GREETING -->
+    <section id="greeting-section" class="section">
+        <div class="background-container visible-bg">
+            <div class="bg-gradient"></div>
+            <div class="floating-objects">
+                <div class="star" style="top:8%;left:12%;font-size:30px;">✦</div>
+                <div class="star" style="top:16%;right:16%;font-size:24px;animation-delay:0.5s;">✧</div>
+                <div class="star" style="top:50%;left:6%;font-size:28px;animation-delay:1s;">✦</div>
+                <div class="star" style="top:68%;right:10%;font-size:22px;animation-delay:1.5s;">✧</div>
+                <div class="star" style="top:82%;left:48%;font-size:26px;animation-delay:0.8s;">✦</div>
+                <div class="star" style="top:38%;right:5%;font-size:20px;animation-delay:1.2s;">✧</div>
+
+                <div class="cherry-leaf" style="left:5%;animation-delay:0s;">🌸</div>
+                <div class="cherry-leaf" style="left:20%;animation-delay:1.5s;">🌸</div>
+                <div class="cherry-leaf" style="left:35%;animation-delay:3s;">🌸</div>
+                <div class="cherry-leaf" style="left:50%;animation-delay:0.5s;">🌸</div>
+                <div class="cherry-leaf" style="left:65%;animation-delay:2.5s;">🌸</div>
+                <div class="cherry-leaf" style="left:80%;animation-delay:4.5s;">🌸</div>
+                <div class="cherry-leaf" style="left:95%;animation-delay:2s;">🌸</div>
+
+                <div class="jellyfish pink-jelly" style="top:12%;left:4%;">
+                    <div class="jelly-body"></div>
+                    <div class="jelly-tentacles">
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                    </div>
+                </div>
+                <div class="jellyfish blue-jelly" style="top:20%;right:5%;animation-delay:2s;">
+                    <div class="jelly-body"></div>
+                    <div class="jelly-tentacles">
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                    </div>
+                </div>
+                <div class="jellyfish pink-jelly" style="top:55%;right:8%;animation-delay:3.5s;transform:scale(0.75);">
+                    <div class="jelly-body"></div>
+                    <div class="jelly-tentacles">
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                        <div class="tentacle"></div>
+                    </div>
+                </div>
+
+                <div class="tulip" style="bottom:6%;left:5%;">
+                    <div class="tulip-petals pink"></div>
+                    <div class="tulip-stem"></div>
+                </div>
+                <div class="tulip" style="bottom:10%;left:12%;animation-delay:0.4s;">
+                    <div class="tulip-petals lilac"></div>
+                    <div class="tulip-stem"></div>
+                </div>
+                <div class="tulip" style="bottom:8%;right:6%;">
+                    <div class="tulip-petals pink"></div>
+                    <div class="tulip-stem"></div>
+                </div>
+                <div class="tulip" style="bottom:12%;right:14%;animation-delay:0.6s;">
+                    <div class="tulip-petals lilac"></div>
+                    <div class="tulip-stem"></div>
+                </div>
+
+                <div class="forget-me-not" style="bottom:16%;left:20%;">
+                    <div class="fmn-petals"></div>
+                    <div class="fmn-center"></div>
+                    <div class="fmn-stem"></div>
+                </div>
+                <div class="forget-me-not" style="bottom:14%;right:22%;animation-delay:0.8s;">
+                    <div class="fmn-petals"></div>
+                    <div class="fmn-center"></div>
+                    <div class="fmn-stem"></div>
+                </div>
+
+                <div class="lily-valley" style="bottom:5%;left:30%;">
+                    <div class="lily-stem-main"></div>
+                    <div class="lily-bells">
+                        <div class="bell"></div>
+                        <div class="bell"></div>
+                        <div class="bell"></div>
+                    </div>
+                </div>
+                <div class="lily-valley" style="bottom:7%;right:28%;">
+                    <div class="lily-stem-main"></div>
+                    <div class="lily-bells">
+                        <div class="bell"></div>
+                        <div class="bell"></div>
+                        <div class="bell"></div>
+                    </div>
+                </div>
+
+                <div class="cherry-tree" style="bottom:0;left:-30px;transform:scale(0.9);">
+                    <div class="tree-trunk"></div>
+                    <div class="tree-crown">
+                        <div class="crown-part"></div>
+                        <div class="crown-part"></div>
+                        <div class="crown-part"></div>
+                    </div>
+                </div>
+                <div class="cherry-tree" style="bottom:0;right:-35px;transform:scale(0.8);">
+                    <div class="tree-trunk"></div>
+                    <div class="tree-crown">
+                        <div class="crown-part"></div>
+                        <div class="crown-part"></div>
+                        <div class="crown-part"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="light-blur-overlay"></div>
+
+        <div class="greeting-container">
+            <div class="main-greeting">
+                <div class="crescent-decoration">🌙</div>
+                <h1 class="eid-title">Eid Mubarak</h1>
+                <p class="user-greeting">Dear <span id="displayName">Friend</span>!</p>
+                <div class="decorative-line">
+                    <span>✦</span>
+                    <span>🌸</span>
+                    <span>✦</span>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll down for your message</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: MESSAGE -->
+    <section id="message-section" class="section">
+        <div class="content-background">
+            <div class="border-decoration top-left">
+                <span class="border-star">✦</span>
+                <span class="border-blossom">🌸</span>
+            </div>
+            <div class="border-decoration top-right-corner">
+                <span class="border-blossom">🌸</span>
+                <span class="border-star">✧</span>
+            </div>
+            <div class="border-decoration bottom-left">
+                <span class="border-blossom">🌸</span>
+                <span class="border-star">✦</span>
+            </div>
+            <div class="border-decoration bottom-right">
+                <span class="border-star">✧</span>
+                <span class="border-blossom">🌸</span>
+            </div>
+
+            <div class="side-decoration left-side">
+                <span class="side-blossom">🌸</span>
+                <span class="side-star">✧</span>
+                <span class="side-blossom">🌸</span>
+            </div>
+            <div class="side-decoration right-side">
+                <span class="side-star">✦</span>
+                <span class="side-blossom">🌸</span>
+                <span class="side-star">✧</span>
+            </div>
+        </div>
+
+        <div class="eid-badge" id="eidBadge">
+            <span class="eid-text-small">Eid Mubarak</span>
+            <span class="badge-star">✦</span>
+        </div>
+
+        <div class="content-container">
+            <div class="message-card">
+                <div class="card-header">
+                    <span class="card-decoration">🌸</span>
+                    <h2>A Special Message For You</h2>
+                    <span class="card-decoration">🌸</span>
+                </div>
+
+                <div class="message-content">
+                    <p id="typewriter-text" class="typewriter"></p>
+                </div>
+
+                <div class="card-footer">
+                    <div class="footer-decoration">
+                        <span>✦</span>
+                        <span>🌸</span>
+                        <span>✧</span>
+                        <span>🌸</span>
+                        <span>✦</span>
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeBtn" class="close-button">
+                <span>Close Greeting</span>
+                <span class="close-icon">💌</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- CLOSING OVERLAY -->
+    <div id="closing-overlay" class="closing-overlay">
+        <div class="closing-envelope">
+            <div class="closing-envelope-back"></div>
+            <div class="closing-letter">
+                <p>Thank you for reading!</p>
+                <p class="closing-eid">🌸 Eid Mubarak! 🌸</p>
+            </div>
+            <div class="closing-envelope-front"></div>
+            <div class="closing-envelope-flap"></div>
+        </div>
+        <button id="restartBtn" class="restart-button">Send Another Greeting ✨</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
